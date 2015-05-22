@@ -7,6 +7,9 @@
   fetchJSONP(url, returnProducts);
 
 
+  var ulElement = document.querySelector('.products');
+
+
   function fetchJSONP(url, callback) {
       var callbackName = 'jsonp_callback_' + Math.round(100000 * Math.random());
       var script = document.createElement('script');
@@ -25,14 +28,15 @@
   function returnProducts(response) {
       var products = response.results;
       console.log(products);
-      // displayProducts(products);
+      displayProducts(products);
     }
-  //
-    // function displayProducts(products) {
-    //     var source   = document.querySelector("#product-template").innerHTML;
-    //     var template = Handlebars.compile(source);
-    //     characters.forEach(function(character){
-    //       var output = template(character);
-    //       ulElement.insertAdjacentHTML('beforeend', output);
-    //     });
-    //   }
+
+
+    function displayProducts(products) {
+        var source   = document.querySelector("#product-template").innerHTML;
+        var template = Handlebars.compile(source);
+        products.forEach(function(product){
+          var output = template(product);
+          ulElement.insertAdjacentHTML('beforeend', output);
+        });
+      }

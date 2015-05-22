@@ -7,6 +7,27 @@
 </head>
 <body>
 
+
+
+  <section class="products"></section>
+        <ul class="product-listings">
+
+        </ul>
+
+
+
+
+    <script id="product-template" type="text/x-handlebars-template">
+        <li class="product">
+      		<img src="{{Images.0.url_170x135}}">
+    			<h1>{{title}}</h1>
+    			<h2>{{Shop.shop_name}}</h2>
+    			<h3>${{price}} {{currency_code}}</h3>
+   	 	</li>
+    </script>
+
+
+
   <script src="bower_components/handlebars/handlebars.js"></script>
   <script src="main.js"></script>
 </body>
