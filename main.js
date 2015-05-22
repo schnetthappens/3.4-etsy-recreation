@@ -4,7 +4,7 @@
 })();
 
   var url = "https://api.etsy.com/v2/listings/active.js?api_key=l16o96t6qsh5xw9lwh1itw9x&keywords=baseball&sort_on=price&includes=Images,Shop"
-  fetchJSONP(url, logData);
+  fetchJSONP(url, returnProducts);
 
 
   function fetchJSONP(url, callback) {
@@ -22,27 +22,17 @@
   }
 
 
-  function logData(data) {
-    console.log(data);
-  }
-
-
-  /*
-      Etsy's API return data in a slightly different format.
-      Extract the data accordingly
-    */
-
-  // function app(response) {
-  //     var titles = response.data.results;
-  //     console.log(title);
-  //     displayProductTitles(titles);
-  //   }
+  function returnProducts(response) {
+      var products = response.results;
+      console.log(products);
+      // displayProducts(products);
+    }
   //
-  //   function displayProductTitles(characters) {
-  //       var source   = document.querySelector("#product-template").innerHTML;
-  //       var template = Handlebars.compile(source);
-  //       characters.forEach(function(character){
-  //         var output = template(character);
-  //         ulElement.insertAdjacentHTML('beforeend', output);
-  //       });
-  //     }
+    // function displayProducts(products) {
+    //     var source   = document.querySelector("#product-template").innerHTML;
+    //     var template = Handlebars.compile(source);
+    //     characters.forEach(function(character){
+    //       var output = template(character);
+    //       ulElement.insertAdjacentHTML('beforeend', output);
+    //     });
+    //   }
