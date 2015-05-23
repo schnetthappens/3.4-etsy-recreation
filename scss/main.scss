@@ -1,2 +1,21 @@
+$visual-grid: true;
+$border-box-sizing: true;
+
+
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
+
+@import 'header.scss';
+
+
+
+.category-listings {
+  height: 320px;
+  background-color: #EBEBE6;
+}
+
+
+.product-information {
+  height: auto;
+  background-color: #F5F5F1;
+}
