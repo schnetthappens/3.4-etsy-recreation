@@ -1,0 +1,39 @@
+
+.footer-element {
+  font-size: 1.4em;
+}
+
+
+.subscribe {
+  height: 135px;
+  border: 10px solid #EFEFEB;
+}
+
+
+.footer-links {
+  @include span-columns(12);
+}
+
+  .footer-links a {
+    display: block;
+    color: #0192B5;
+    text-decoration: none;
+    padding-bottom: 1em;
+  }
+
+.links {
+  @include span-columns(2.4 of 12);
+  list-style: none;
+}
+
+  .links .sell-etsy {
+    padding-top: 1em;
+  }
+
+  .follow-etsy .fa {
+    color: #0192B5;
+  }
+
+  .follow-etsy a {
+    display: inline-block;
+  }
