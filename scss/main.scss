@@ -1,10 +1,12 @@
 $visual-grid: true;
 $border-box-sizing: true;
+$gutter: 0em;
 
 
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 @import 'header.scss';
+@import 'footer.scss';
 
 
 body {
@@ -49,6 +51,8 @@ body {
 
   .main-container {
     background-color: #F5F5F1;
+    bottom-border: 1px solid #F5F5F1;
+
   }
 
     .main-container-wrapper {
@@ -80,3 +84,15 @@ body {
             display: inline-block;
             margin-bottom: 1.5em;
           }
+
+
+    .footer-element {
+      height: 565px;
+      background-color: #F5F5F1;
+    }
+
+
+      .footer-content {
+        @include outer-container(980px);
+
+      }
