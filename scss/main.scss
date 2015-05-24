@@ -4,8 +4,8 @@ $border-box-sizing: true;
 
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
-
 @import 'header.scss';
+
 
 body {
   font-size: 62.5%;
@@ -13,8 +13,11 @@ body {
   list-style: none;
 }
 
+/*PAGE LAYOUT, including main elements*/
 
 
+
+/*CATEGORY RESULTS*/
 
 .category-container {
   height: 320px;
@@ -42,6 +45,8 @@ body {
 
 
 
+  /*MAIN CONTAINER*/
+
   .main-container {
     background-color: #F5F5F1;
   }
@@ -51,12 +56,17 @@ body {
       padding-top: 50px;
     }
 
+
+      /*CATEGORY SIDEBAR*/
+
       .category-sidebar {
         @include span-columns(3);
         height: 410px;
         background-color: #fff;
       }
 
+
+      /*PRODUCT LISTINGS and PRODUCTS*/
 
       .product-listings {
         @include span-columns(9);
