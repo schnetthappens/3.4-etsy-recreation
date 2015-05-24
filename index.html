@@ -7,88 +7,118 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <header class="page-header">
-    <ul class="find-products">
-      <li class="etsy-logo"><img src="" alt=""></li>
-      <li class="input-search"><input type="text"></li>
-      <li class="search-button"></li>
-      <li class="browse-categories"></li>
-    </ul>
-    <ul class="primary-nav">
-      <li class="home">
-        <span>Home</span>>
-      </li>
-      <li class="favorites">
-        <span>Favorites</span>
-      </li>
-      <li class="you">
-        <span>You</span>
-      </li>
-      <li class= "cart">
-        <span>Cart</span>
-      </li>
-    </ul>
-  </header>
+    <header class="header-element">
+      <div class="header-content">
+        <ul class="product-search">
+          <li class="logo">
+            <img src="images/etsy-logo.png" alt="">
+          </li>
+          <li class="search-item search">
+            <input type="text">
+          </li>
+          <li class="search-item search-button">
+            <button>Search</button>
+          </li>
+          <li class="search-item browse-button">
+            <button>Browse</button>
+          </li>
+        </ul>
+        <ul class="primary-nav">
+          <li class="nav-item home">
+            <span>Home</span>
+          </li>
+          <li class="nav-item favorites">
+            <span>Favorites</span>
+          </li>
+          <li class="nav-item you">
+            <span>You</span>
+          </li>
+          <li class= "nav-item cart">
+            <span>Cart</span>
+          </li>
+        </ul>
+      </div>
+    </header>
 
 
-  <section class="category-listings">
-    <ul class="categories">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
 
-    </ul>
-  </section>
+    <div class="category-container">
+      <section class="category-listings">
+        <h2>Shop "baseball" by category</h2>
+        <ul class="categories">
+          <li class="category"><img src="http://placehold.it/185x200"></li>
+          <li class="category"><img src="http://placehold.it/185x200"></li>
+          <li class="category"><img src="http://placehold.it/185x200"></li>
+          <li class="category"><img src="http://placehold.it/185x200"></li>
+          <li class="category"><img src="http://placehold.it/185x200"></li>
+        </ul>
+      </section>
+    </div>
 
 
-  <section class="product-information">
-    <section class="product-listings">
-          <ul class="products">
+    <div class="main-container">
+      <div class="main-container-wrapper">
+        <section class="category-sidebar">
+          <ul class="category-links">
+            <li></li>
+
           </ul>
-    </section>
+        </section>
 
 
-    <section class="category-sidebar">
-      <ul class="category-links">
-        <li></li>
+        <!-- <section class="product-information"> -->
 
-      </ul>
-    </section>
-
-    <section class="product-filters">
-      <div class="item-type"></div>
-      <div class="price"></div>
-      <div class="color"></div>
-      <div class="ordering-options"></div>
-      <div class="shop-location"></div>
-      <div class="ship-to"></div>
-    </section>
-  </section>
-
-
-  <footer class="page-footer">
-    <section class="subscribe"></section>
-    <section class="footer-links"></section>
-    <section class="locale-info"></section>
-    <section class="legal-info"></section>
-  </footer>
+          <ul class="product-listings">
+            <li class="product"><img src="http://placehold.it/220x225"></li>
+            <li class="product"><img src="http://placehold.it/220x225"></li>
+            <li class="product"><img src="http://placehold.it/220x225"></li>
+            <li class="product"><img src="http://placehold.it/220x225"></li>
+            <li class="product"><img src="http://placehold.it/220x225"></li>
+            <li class="product"><img src="http://placehold.it/220x225"></li>
+            <li class="product"><img src="http://placehold.it/220x225"></li>
+            <li class="product"><img src="http://placehold.it/220x225"></li>
+            <li class="product"><img src="http://placehold.it/220x225"></li>
+            <li class="product"><img src="http://placehold.it/220x225"></li>
+            <li class="product"><img src="http://placehold.it/220x225"></li>
+          </ul>
 
 
 
-    <script id="product-template" type="text/x-handlebars-template">
-        <li class="product">
-      		<img src="{{Images.0.url_170x135}}">
-    			<h1>{{title}}</h1>
-    			<h2>{{Shop.shop_name}}</h2>
-    			<h3>${{price}} {{currency_code}}</h3>
-   	 	</li>
-    </script>
+
+          <section class="product-filters">
+            <div class="item-type"></div>
+            <div class="price"></div>
+            <div class="color"></div>
+            <div class="ordering-options"></div>
+            <div class="shop-location"></div>
+            <div class="ship-to"></div>
+          </section>
+        </section>
+      </div>
+    </div>
+
+
+    <footer class="page-footer">
+      <section class="subscribe"></section>
+      <section class="footer-links"></section>
+      <section class="locale-info"></section>
+      <section class="legal-info"></section>
+    </footer>
 
 
 
-  <script src="bower_components/handlebars/handlebars.js"></script>
-  <script src="main.js"></script>
+      <script id="product-template" type="text/x-handlebars-template">
+          <li class="product">
+        		<img src="{{Images.0.url_170x135}}">
+      			<h1>{{title}}</h1>
+      			<h2>{{Shop.shop_name}}</h2>
+      			<h3>${{price}} {{currency_code}}</h3>
+     	 	</li>
+      </script>
+
+
+
+    <!-- // <script src="bower_components/handlebars/handlebars.js"></script> -->
+    <script src="main.js"></script>
 </body>
 </html>

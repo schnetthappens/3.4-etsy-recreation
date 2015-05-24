@@ -1,8 +1,53 @@
 
 $header-color: #fff;
 
-.page-header {
+.header-element {
   height: 80px;
   background-color: $header-color;
   margin-top: 0;
+  border-bottom: 1px solid black;
 }
+
+  .header-content {
+    @include outer-container(980px);
+    vertical-align: middle;
+  }
+
+    .product-search {
+    /*   @include span-columns(8); */
+      list-style: none;
+      margin: 0;
+      display: inline-block;
+      padding: 0;
+      vertical-align: middle;
+    }
+
+    .search-item {
+      list-style: none;
+      display: inline-block;
+      vertical-align: middle;
+      }
+
+      .logo {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .logo img {
+        width: 80px;
+        height: 50px;
+        display: inline-block;
+      }
+
+
+  .primary-nav {
+    width: 230px;
+    height: 50px;
+    display: inline-block;
+  }
+
+    .nav-item {
+      list-style: none;
+      padding-right: 2em;
+      display: inline-block;
+    }
