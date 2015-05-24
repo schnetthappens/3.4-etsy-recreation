@@ -74,7 +74,7 @@ body:before {
   height: 30px;
   background-color: #32A4BF;
   border: 1px solid #2E96B0;
-  margin-left: 0; }
+  margin-left: -5px; }
 
 .search-button-search {
   color: #fff;
