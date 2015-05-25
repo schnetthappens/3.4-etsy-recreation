@@ -6,6 +6,7 @@ $gutter: 0em;
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 @import 'header.scss';
+@import 'content.scss';
 @import 'footer.scss';
 
 
@@ -51,13 +52,12 @@ body {
 
   .main-container {
     background-color: #F5F5F1;
-    bottom-border: 1px solid #F5F5F1;
-
+    border-bottom: 1px solid #7D7773;
   }
 
     .main-container-wrapper {
       @include outer-container(980px);
-      padding-top: 50px;
+      padding-top: 30px;
     }
 
 
@@ -89,8 +89,8 @@ body {
     .footer-element {
       height: 565px;
       background-color: #F5F5F1;
+    /*   margin-top: 35px; */
     }
-
 
       .footer-content {
         @include outer-container(980px);
