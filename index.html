@@ -9,7 +9,11 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+  <!--HEADER-->
     <header class="header-element">
+
+      <!--HEADER CONTENT-->
       <div class="header-content">
         <ul class="product-search">
           <li class="logo">
@@ -43,11 +47,11 @@
             <p>Cart</p>
           </li>
         </ul>
-      </div>
-    </header>
+      </div><!--END header content-->
+    </header><!--END header-->
 
 
-
+    <!--CATEGORY CONTAINER-->
     <div class="category-container">
       <section class="category-listings">
         <h2 class="category-header">Shop "baseball" by category</h2>
@@ -59,13 +63,23 @@
           <li class="category"><img src="http://placehold.it/185x200"></li>
         </ul>
       </section>
-    </div>
+    </div><!--END category container-->
 
+
+    <!--MAIN CONTAINER-->
     <div class="main-container">
+
+      <!--MAIN CONTAINER wrapper-->
       <div class="main-container-wrapper">
         <p class="show-results-text"><strong>Show results for:</strong></p>
+
+        <!--sidebar container-->
         <div class="sidebar-container">
+
+          <!--sidebar wrapper-->
           <div class="sidebar-wrapper">
+
+            <!--category sidebar-->
             <section class="category-sidebar">
               <p class="all-categories"><strong>All Categories</strong></p>
               <ul class="category-links">
@@ -85,7 +99,9 @@
                   <a href="#">Shoes</a></li>
                   <a href="#">Books, Music & Movies</a></li>
               </ul>
-            </section>
+            </section><!--END category sidebar-->
+
+            <!--product-filters-->
             <section class="product-filters">
               <div class="item-type"></div>
               <div class="price"></div>
@@ -93,35 +109,34 @@
               <div class="ordering-options"></div>
               <div class="shop-location"></div>
               <div class="ship-to"></div>
-            </section>
-          </section>
-        </div>
-      </div>
+            </section><!--END product filters-->
 
+          </div><!--END sidebar wrapper-->
+        </div><!--END sidebar container-->
+
+            <!--product listings-->
             <ul class="product-listings">
-              <li class="product"><img src="http://placehold.it/220x225"></li>
-              <li class="product"><img src="http://placehold.it/220x225"></li>
-              <li class="product"><img src="http://placehold.it/220x225"></li>
-              <li class="product"><img src="http://placehold.it/220x225"></li>
-              <li class="product"><img src="http://placehold.it/220x225"></li>
-              <li class="product"><img src="http://placehold.it/220x225"></li>
-              <li class="product"><img src="http://placehold.it/220x225"></li>
-              <li class="product"><img src="http://placehold.it/220x225"></li>
-              <li class="product"><img src="http://placehold.it/220x225"></li>
-              <li class="product"><img src="http://placehold.it/220x225"></li>
-              <li class="product"><img src="http://placehold.it/220x225"></li>
-            </ul>
-        </div>
-      </div>
-    </div>
+              <!-- <li class="product"></li> -->
+            </ul><!--END product listings-->
+
+      </div><!--END MAIN CONTAINER wrapper-->
+    </div><!--END MAIN CONTAINER-->
 
 
+
+    <!--FOOTER ELEMENT-->
       <footer class="footer-element">
+
+        <!--FOOTER CONTENT-->
         <div class="footer-content">
+
+          <!--subscribe-->
           <section class="subscribe">
             <p class="subscribe-text">Get top trends and fresh editors' picks in your inbox with Etsy Finds.</p>
             <button class="subscribe-btn"><strong>Subscribe</strong></button>
-          </section>
+          </section><!--END subscribe-->
+
+          <!--FOOTER links-->
           <section class="footer-links">
             <ul class="links start-business">
               <li>
@@ -185,8 +200,12 @@
                 <a href="#">Instagram</a>
               </li>
             </ul>
-          </section>
+          </section><!--end FOOTER links-->
+
+          <!--Horizontal rule-->
           <hr class="section-break">
+
+          <!--Locale-info-->
           <section class="locale-info">
             <ul class="locale-links">
               <li class="item country">
@@ -203,7 +222,9 @@
                 <button class="btn help"><strong>Help</strong></button>
               </li>
             </ul>
-          </section>
+          </section><!--ENDlocale-info-->
+
+          <!--Legal info-->
           <section class="legal-info">
             <ul class="legal-links">
               <li class="copyright">&copy 2015 Etsy, Inc.</li>
@@ -212,24 +233,29 @@
               <a href="#">Copyright</a>
               <a href="#">Internet-based Ads</a>
             </ul>
-          </section>
-        </div>
-      </footer>
+          </section><!--END legal-info-->
+        </div><!--END footer CONTENT-->
+      </footer><!--END footer-->
 
 
 
       <script id="product-template" type="text/x-handlebars-template">
+
+        <!--PRODUCT-->
           <li class="product">
-        		<img src="{{Images.0.url_170x135}}">
-      			<h1>{{title}}</h1>
-      			<h2>{{Shop.shop_name}}</h2>
-      			<h3>${{price}} {{currency_code}}</h3>
-     	 	</li>
+        		<img src="{{Images.0.url_170x135}}" height="175">
+            <div class="product-info">
+        			<p class="prod-title">{{title}}</p>
+        			<ul class="other-prod">
+                <li><p class="detail shop-name">{{Shop.shop_name}}</p></li>
+          			<li><p class="detail price">${{price}} {{currency_code}}</p></li>
+        			</ul>
+            </div>
+          </li><!--END product-->
+
       </script>
 
-
-
-    <!-- // <script src="bower_components/handlebars/handlebars.js"></script> -->
+    <script src="bower_components/handlebars/handlebars.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

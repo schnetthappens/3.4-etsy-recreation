@@ -14,22 +14,73 @@ $category-header-text: 'Lora', serif;
   color: #6E6E6D;
 }
 
-.all-categories {
-  font-size: 1.2em;
-  color: #6E6E6D;
-  padding-top: 1em;
-  padding-left: 1em;
+
+  .all-categories {
+    font-size: 1.2em;
+    color: #6E6E6D;
+    padding-top: 1em;
+    padding-left: 1em;
+  }
+
+  .category-links {
+    padding-left: 30px;
+  }
+
+  .category-links a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #0192B5;
+    padding: 0.4em 0;
+
+  }
+
+
+
+.product {
+  background-color: #fff;
+  border-radius: 5px;
+  height: 235px;
 }
 
-.category-links {
-  padding-left: 30px;
-}
+  .product img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
 
-.category-links a {
-  display: block;
-  text-decoration: none;
-  font-size: 1.2em;
-  color: #0192B5;
-  padding: 0.4em 0;
 
-}
+  .product-info {
+    padding: 0.5em;
+  }
+
+
+  .prod-title {
+    font-size: 1.2em;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .other-prod {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .other-prod li {
+    display: inline-block;
+    padding: 0;
+  }
+
+    .shop-name {
+      font-size: 1.1em;
+      color: #B2B2BE;
+      padding-right: 1em;
+    }
+
+    .price {
+      font-size: 1.2em;
+      color: #80C053;
+      /* position: absolute;
+      right: 10px; */
+    }

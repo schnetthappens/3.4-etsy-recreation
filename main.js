@@ -7,7 +7,7 @@
   fetchJSONP(url, returnProducts);
 
 
-  var ulElement = document.querySelector('.products');
+  var ulElement = document.querySelector('.product-listings');
 
 
   function fetchJSONP(url, callback) {
@@ -27,7 +27,7 @@
 
   function returnProducts(response) {
       var products = response.results;
-      // console.log(products);
+      console.log(products);
       displayProducts(products);
     }
 
