@@ -1,73 +1,120 @@
 
+/*GLOBAL VARIABLES*/
+
+$white: #fff;
+
+
+/*SUBSCRIBE VARIABLES*/
+$subscribe-text: 'Lora', serif;
+$subscribe-text-size: 1.2em;
+$subscribe-border-color: #EFEFEB;
+$subscribe-btn-color: #37A9C5;
+$subscribe-btn-border-color: #2E97B0;
+
+
+/*FOOTER LINKS VARIABLES*/
+$footer-links-color: #0192B5;
+$open-shop-btn-color: #37A9C5;
+$open-shop-btn-border-color: #2E97B0;
+
+$fa-color: #0192B5;
+
+$hr-color: #EFEFEB;
+
+
+/*LEGAL LINKS VARIABLES*/
+$locale-links-item-color: #666666;
+$help-btn-color: #F3F3F2;
+$copyright-color: #B29999;
+$legal-links-color: #7D7773;
+
+
+
+
+
+/*MAIN FOOTER element*/
+
 .footer-element {
   font-size: 1.4em;
 }
 
+  /*subscribe box*/
 
-.subscribe {
-  height: 135px;
-  border: 10px solid #EFEFEB;
-}
-  .subscribe-text {
-    font-family: 'Lora', serif;
-    font-weight: 700;
-    font-size: 1.2em;
-    text-align: center;
+  .subscribe {
+    height: 135px;
+    border: 10px solid $subscribe-border-color;
   }
 
-  .subscribe-btn {
-    width: 95px;
-    height: 40px;
-    background-color: #37A9C5;
-    color: #fff;
-    border-radius: 5px;
-    border: 2px solid #2E97B0;
-    position: relative;
-    left: 450px;
+    .subscribe-text {
+      font-family: $subscribe-text;
+      font-weight: 700;
+      font-size: $subscribe-text-size;
+      text-align: center;
+    }
+
+    .subscribe-btn {
+      width: 95px;
+      height: 40px;
+      background-color: $subscribe-btn-color;
+      color: $white;
+      border-radius: 5px;
+      border: 2px solid $subscribe-btn-border-color;
+      position: relative;
+      left: 450px;
+    }
+
+
+
+  /*footer links*/
+
+
+  .footer-links {
+    @include span-columns(12);
   }
 
+    .footer-links a {
+      display: block;
+      color: $footer-links-color;
+      text-decoration: none;
+      padding-bottom: 1em;
+    }
 
-.footer-links {
-  @include span-columns(12);
-}
+    .links {
+      @include span-columns(2.4 of 12);
+      list-style: none;
+    }
 
-  .footer-links a {
-    display: block;
-    color: #0192B5;
-    text-decoration: none;
-    padding-bottom: 1em;
-  }
+      .links .sell-etsy {
+        padding-top: 1em;
+      }
 
-.links {
-  @include span-columns(2.4 of 12);
-  list-style: none;
-}
+      .start-business .open-shop-btn {
+        width: 100px;
+        height: 28px;
+        background-color: $open-shop-btn-color;
+        color: $white;
+        border-radius: 5px;
+        border: 1px solid $open-shop-btn-border-color;
+      }
 
-  .links .sell-etsy {
-    padding-top: 1em;
-  }
+      .follow-etsy .fa {
+        color: $fa-color;
+      }
 
-  .start-business .open-shop-btn {
-    width: 100px;
-    height: 28px;
-    background-color: #37A9C5;
-    color: #fff;
-    border-radius: 5px;
-    border: 1px solid #2E97B0;
-  }
+      .follow-etsy a {
+        display: inline-block;
+      }
 
-  .follow-etsy .fa {
-    color: #0192B5;
-  }
 
-  .follow-etsy a {
-    display: inline-block;
-  }
+    /*horizontal rule*/
 
-  .section-break {
-    height: 1px;
-    background-color: #EFEFEB;
-  }
+    .section-break {
+      height: 1px;
+      background-color: $hr-color;
+    }
+
+
+  /*other links and legal links*/
 
 
   .locale-links {
@@ -80,56 +127,55 @@
   }
 
 
-  .locale-links .item {
-    height: 35px;
-    display: inline-block;
-    border: 1px solid #666666;
-    padding: 0 0.5em;
-  }
-
-
-    .locale-links a {
-      text-decoration: none;
-      color: #666666;
-      line-height: 35px;
-      font-size: 0.9em;
+    .locale-links .item {
+      height: 35px;
+      display: inline-block;
+      border: 1px solid $locale-links-item-color;
+      padding: 0 0.5em;
     }
 
-      .country .fa {
-        color: #666666;
+      .locale-links a {
+        text-decoration: none;
+        color: $locale-links-item-color;
+        line-height: 35px;
+        font-size: 0.9em;
       }
 
-
-      .help {
-        width: 140px;
-        height: 35px;
-        display: inline-block;
-        background-color: #F3F3F2;
-        padding: 0;
-        margin-left: 35px;
-        border-radius: 3px;
-      }
-
-        .help .btn-help {
-          color: #666666;
+        .country .fa {
+          color: $locale-links-item-color;
         }
 
 
-  .legal-links {
-    text-align: center;
-  }
+        .help {
+          width: 140px;
+          height: 35px;
+          display: inline-block;
+          background-color: $help-btn-color;
+          padding: 0;
+          margin-left: 35px;
+          border-radius: 3px;
+        }
 
-  .legal-links .copyright {
-    list-style: none;
-    display: inline-block;
-    font-size: 0.8em;
-    color: #B29999;
-  }
+          .help .btn-help {
+            color: $locale-links-item-color;
+          }
 
-  .legal-links a {
-    list-style: none;
-    text-decoration: none;
-    font-size: 0.8em;
-    color: #7D7773;
-    padding: 0 1em;
-  }
+
+    .legal-links {
+      text-align: center;
+    }
+
+    .legal-links .copyright {
+      list-style: none;
+      display: inline-block;
+      font-size: 0.8em;
+      color: $copyright-color;
+    }
+
+    .legal-links a {
+      list-style: none;
+      text-decoration: none;
+      font-size: 0.8em;
+      color: $legal-links-color;
+      padding: 0 1em;
+    }
