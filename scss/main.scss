@@ -31,7 +31,7 @@ body {
   .category-listings {
     @include outer-container(980px);
     margin: 0 auto;
-    margin-top: -12px;
+  /*   margin-top: -12px; */
     padding: 2em 0;
   }
 
@@ -79,14 +79,18 @@ body {
         .category-sidebar {
           height: 410px;
           background-color: #fff;
-          margin-top: -12px;
           /* display: inline-block; */
         }
 
+
+        .product-filter-container {
+          margin-top: 25px;
+        }
+
         .product-filters {
-          height: 680px;
+          height: 720px;
           background-color: #fff;
-          margin-top: 7em;
+          /* margin-top: 7em; */
           /* display: inline-block; */
         }
 

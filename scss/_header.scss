@@ -3,11 +3,17 @@
 
 $white: #fff;
 
+$header-element-border-color: #B2B2BE;
+
+
 $search-background-color: #F5F5F1;
+$search-box-border-color: #CCCCCC;
 $search-button-background-color: #32A4BF;
 $search-button-border-color: #2E96B0;
 
-$browse-button-border-color: #F5F5F1;
+  $input-focus-border-color: #39AAC5;
+
+$browse-button-border-color: #CCCCCC;
 $browse-text-color: #666666;
 
 $font-awesome-icon-color: #666666;
@@ -22,13 +28,13 @@ $primary-nav-text-color: #666666;
   height: 80px;
   background-color: $white;
   margin-top: 0;
-  border-bottom: 1px solid #F5F5F1;
+  border-bottom: 1px solid $header-element-border-color;
 }
 
 
   .header-content {
     @include outer-container(980px);
-    padding: 0.5em 0;
+    padding-top: 0.7em;
   }
 
     .product-search {
@@ -36,7 +42,8 @@ $primary-nav-text-color: #666666;
       list-style: none;
       margin: 0;
       display: inline-block;
-      padding: 0;
+      padding-top: 0.4em;
+      padding-left: 0;
       vertical-align: middle;
     }
 
@@ -60,7 +67,7 @@ $primary-nav-text-color: #666666;
       .search-box {
         width: 250px;
         height: 30px;
-        border: 1px solid #CCCCCC;
+        border: 1px solid $search-box-border-color;
         background-color: $search-background-color;
         border-top-left-radius: 3px;
         border-bottom-left-radius: 3px;
@@ -71,7 +78,7 @@ $primary-nav-text-color: #666666;
           font-size: 1.4em;
           background-color: $white;
           padding-left: 0.5em;
-          border-color: #39AAC5;
+          border-color: $input-focus-border-color;
         }
 
       .search-button {
@@ -98,6 +105,7 @@ $primary-nav-text-color: #666666;
         height: 30px;
         background-color: $white;
         border: 1px solid $browse-button-border-color;
+        border-radius: 2px;
         margin-left: 30px;
       }
 
@@ -105,6 +113,7 @@ $primary-nav-text-color: #666666;
           font-size: 1.5em;
           color: $browse-text-color;
           margin: 0;
+          padding: 0.2em 0;
           text-align: center;
           line-height: 1.5em;
         }
