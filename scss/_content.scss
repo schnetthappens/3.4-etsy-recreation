@@ -1,0 +1,35 @@
+
+$category-header-text: 'Lora', serif;
+
+.category-header {
+  font-family: $category-header-text;
+  font-size: 2em;
+  margin-bottom: 0.2em;
+}
+
+
+
+.show-results-text {
+  font-size: 1.2em;
+  color: #6E6E6D;
+}
+
+.all-categories {
+  font-size: 1.2em;
+  color: #6E6E6D;
+  padding-left: 1em;
+}
+
+
+.category-links {
+  padding-left: 30px;
+}
+
+.category-links a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #0192B5;
+  padding: 0.4em 0;
+
+}
