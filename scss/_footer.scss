@@ -19,7 +19,7 @@ $open-shop-btn-border-color: #2E97B0;
 
 $fa-color: #0192B5;
 
-$hr-color: #EFEFEB;
+$hr-color: green;
 
 
 /*LEGAL LINKS VARIABLES*/
@@ -42,7 +42,7 @@ $legal-links-color: #7D7773;
 
   .subscribe {
     height: 135px;
-    margin-top: 35px;
+    /* margin-top: 35px; */
     border: 10px solid $subscribe-border-color;
   }
 
@@ -109,9 +109,9 @@ $legal-links-color: #7D7773;
 
     /*horizontal rule*/
 
-    .section-break {
+    hr {
       height: 1px;
-      background-color: $hr-color;
+      border-color: $hr-color;
     }
 
 
