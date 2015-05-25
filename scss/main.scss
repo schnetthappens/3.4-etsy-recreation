@@ -61,13 +61,31 @@ body {
     }
 
 
-      /*CATEGORY SIDEBAR*/
-
-      .category-sidebar {
+      .sidebar-container {
         @include span-columns(3);
-        height: 410px;
-        background-color: #fff;
+        height: auto;
+        display: inline-block;
       }
+
+        .sidebar-wrapper {
+          @include span-columns(3 of 3);
+          display: inline-block;
+          /* background-color: #fff; */
+        }
+
+        .category-sidebar {
+          height: 410px;
+          background-color: #fff;
+          margin-top: -12px;
+          /* display: inline-block; */
+        }
+
+        .product-filters {
+          height: 680px;
+          background-color: #fff;
+          margin-top: 7em;
+          /* display: inline-block; */
+        }
 
 
       /*PRODUCT LISTINGS and PRODUCTS*/
@@ -76,6 +94,7 @@ body {
         @include span-columns(9);
         display: inline-block;
         margin: 0;
+        padding-left: 20px;
       }
 
           .product {
