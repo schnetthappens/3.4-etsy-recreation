@@ -333,7 +333,7 @@ span {
 /*subscribe box*/
 .subscribe {
   height: 135px;
-  /* margin-top: 35px; */
+  /*   margin-top: 35px; */
   border: 10px solid #EFEFEB; }
 
 .subscribe-text {
@@ -409,8 +409,9 @@ span {
 .locale-links .item {
   height: 35px;
   display: inline-block;
-  border: 1px solid #666666;
-  padding: 0 0.5em; }
+  border: 1px solid #CCCCCC;
+  padding: 0 0.5em;
+  border-radius: 3px; }
 
 .locale-links a {
   text-decoration: none;
@@ -427,11 +428,11 @@ span {
   display: inline-block;
   background-color: #F3F3F2;
   padding: 0;
-  margin-left: 35px;
+  margin-left: 20px;
   border-radius: 3px; }
 
 .help .btn-help {
-  color: #666666; }
+  color: #7D7773; }
 
 .legal-links {
   text-align: center; }
@@ -567,15 +568,17 @@ body {
   .product:nth-child(3n+1) {
     clear: left; }
 
+/*FOOTER and all major elements*/
 .footer-element {
-  height: 565px;
+  height: auto;
   background-color: #F5F5F1;
   /*   margin-top: 35px; */ }
 
 .footer-content {
   max-width: 980px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-top: 35px; }
   .footer-content::after {
     clear: both;
     content: "";

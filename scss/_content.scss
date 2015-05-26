@@ -1,5 +1,17 @@
 
+/*MAIN CONTENT VARIABLES*/
+
+$category-background-color: #FFFFFF;
 $category-header-text: 'Lora', serif;
+$category-border-color: #CCCCCC;
+
+$heading-text-color: #6E6E6D;
+$links-color: #0192B5;
+
+
+
+
+/*CATEGORY listings section*/
 
 .category-header {
   font-family: $category-header-text;
@@ -7,16 +19,21 @@ $category-header-text: 'Lora', serif;
   margin-bottom: 0.2em;
 }
 
-
 .show-results-text {
   font-size: 1.2em;
-  color: #6E6E6D;
+  color: $heading-text-color;
 }
 
 
+/*SIDEBAR*/
+
+.category-sidebar {
+  background-color: $category-background-color;
+}
+
   .all-categories {
     font-size: 1.2em;
-    color: #6E6E6D;
+    color: $heading-text-color;
     padding-top: 0.2em;
     padding-left: 1em;
   }
@@ -25,43 +42,32 @@ $category-header-text: 'Lora', serif;
     padding-left: 30px;
   }
 
-  .category-links a {
-    display: block;
-    text-decoration: none;
-    font-size: 1.2em;
-    color: #0192B5;
-    padding: 0.4em 0;
-  }
+    .category-links a {
+      display: block;
+      text-decoration: none;
+      font-size: 1.2em;
+      color: $links-color;
+      padding: 0.4em 0;
+    }
 
-
-  /*SIDEBAR*/
-
-
-  .category-sidebar {
-    background-color: #FFFFFF;
-  }
-
+    /*borders for both CONTAINERS in the sidebar*/
   .category-sidebar,
   .product-filters {
-    border: 1px solid #CCCCCC;
+    border: 1px solid $category-border-color;
     border-radius: 3px;
   }
 
+    .refine-results {
+      font-size: 1.2em;
+      color: $heading-text-color;
+    }
 
-
-  .refine-results {
-    font-size: 1.2em;
-    color: #6E6E6D;
-  }
-
-
-
-  .filter-title {
-    font-size: 1.2em;
-    color: #6E6E6D;
-    padding-top: 0.2em;
-    padding-left: 1em;
-  }
+    .filter-title {
+      font-size: 1.2em;
+      color: $heading-text-color;
+      padding-top: 0.2em;
+      padding-left: 1em;
+    }
 
 
   .item-type-info,
@@ -100,7 +106,6 @@ $category-header-text: 'Lora', serif;
         color: #0192B5;
         margin-left: 0.5em;
       }
-
 
 
     .price {
@@ -189,7 +194,6 @@ $category-header-text: 'Lora', serif;
 
 
 /*Individual PRODUCT styles*/
-
 
 .product {
   background-color: #fff;

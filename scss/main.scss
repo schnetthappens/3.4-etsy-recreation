@@ -112,13 +112,15 @@ body {
           }
 
 
+    /*FOOTER and all major elements*/
+
     .footer-element {
-      height: 565px;
+      height: auto;
       background-color: #F5F5F1;
     /*   margin-top: 35px; */
     }
 
       .footer-content {
         @include outer-container(980px);
-
+        padding-top: 35px;
       }
