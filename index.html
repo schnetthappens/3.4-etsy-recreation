@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3.4 | Etsy-Recreation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!--HEADER-->
+    <header class="header-element">
+
+      <!--HEADER CONTENT-->
+      <div class="header-content">
+        <ul class="product-search">
+          <li class="logo">
+            <img src="images/etsy-logo.png" alt="">
+          </li>
+          <li class="search-item search">
+            <input class="search-box" type="text">
+          </li>
+          <li class="search-item search-button">
+            <p class="search-button-text"><strong>Search</strong></p>
+          </li>
+          <li class="search-item browse-button">
+            <p class="browse">Browse</p>
+          </li>
+        </ul>
+        <ul class="primary-nav">
+          <li class="nav-item home">
+            <i class="fa fa-home fa-2x"></i>
+            <p>Home</p>
+          </li>
+          <li class="nav-item favorites">
+            <i class="fa fa-heart fa-2x"></i>
+            <p>Favorites</p>
+          </li>
+          <li class="nav-item you">
+            <i class="fa fa-user fa-2x"></i>
+            <p>You</p>
+          </li>
+          <li class= "nav-item cart">
+            <i class="fa fa-shopping-cart fa-2x"></i>
+            <p>Cart</p>
+          </li>
+        </ul>
+      </div><!--END header content-->
+    </header><!--END header-->
+
+
+    <!--CATEGORY CONTAINER-->
+    <div class="category-container">
+      <section class="category-listings">
+        <h2 class="category-header">Shop "baseball" by category</h2>
+        <ul class="categories">
+          <li class="category"><img src="http://placehold.it/185x200"></li>
+          <li class="category"><img src="http://placehold.it/185x200"></li>
+          <li class="category"><img src="http://placehold.it/185x200"></li>
+          <li class="category"><img src="http://placehold.it/185x200"></li>
+          <li class="category"><img src="http://placehold.it/185x200"></li>
+        </ul>
+      </section>
+    </div><!--END category container-->
+
+
+    <!--MAIN CONTAINER-->
+    <div class="main-container">
+
+      <!--MAIN CONTAINER wrapper-->
+      <div class="main-container-wrapper">
+        <p class="show-results-text"><strong>Show results for:</strong></p>
+
+        <!--sidebar container-->
+        <div class="sidebar-container">
+
+
+          <!--sidebar wrapper-->
+          <div class="sidebar-wrapper">
+
+            <!--category sidebar-->
+            <section class="category-sidebar">
+              <p class="all-categories"><strong>All Categories</strong></p>
+              <ul class="category-links">
+                <a href="#">Clothing</a>
+                  <a href="#">Accessories</a></li>
+                  <a href="#">Art & Collectibles</a></li>
+                  <a href="#">Home & Living</a></li>
+                  <a href="#">Craft Supplies & Tools</a></li>
+                  <a href="#">Jewelry</a></li>
+                  <a href="#">Paper & Party Supplies</a></li>
+                  <a href="#">Bath & Beauty</a></li>
+                  <a href="#">Bags & Purses</a></li>
+                  <a href="#">Toys & Games</a></li>
+                  <a href="#">Weddings</a></li>
+                  <a href="#">Pet Supplies</a></li>
+                  <a href="#">Electronics & Accessories</a></li>
+                  <a href="#">Shoes</a></li>
+                  <a href="#">Books, Music & Movies</a></li>
+              </ul>
+            </section><!--END category sidebar-->
+
+            <!--product-filters-->
+            <div class="product-filter-container">
+              <p class="refine-results"><strong>Refine your search</strong></p>
+
+              <form class="product-filters" action="">
+                <div class="item-type">
+                  <p class="filter-title"><strong>Item Type</strong></p>
+                  <ul class="item-type-info">
+                    <li class="choice all-items">
+                      <input class="item-type-btn" type="radio" name="all-items" value="all-items">
+                      <span>All Items</span>
+                    </li>
+                    <li class="choice handmade">
+                      <input class="item-type-btn" type="radio" name="handmade" value="handmade">
+                      <span>Handmade</span>
+                    </li>
+                    <li class="choice vintage">
+                      <input class="item-type-btn" type="radio" name="vintage" value="vintage">
+                      <span>Vintage</span>
+                    </li>
+                </ul>
+                </div>
+                <hr>
+
+                <div class="price">
+                  <p class="filter-title"><strong>Price</strong></p>
+                  <div class="price-fields">
+                    <input class="price-field"><type="text" placeholder="Low">
+                    <span>to</span>
+                    <input class="price-field"><type="text" placeholder="High">
+                    <input class="price-load"><type="text">
+                  </div>
+                </div>
+                <hr>
+
+                <div class="select-color">
+                  <p class="filter-title"><strong>Filter by Color</strong></p>
+                  <ul class="colors">
+                    <li class="color red"></li>
+                    <li class="color orange"></li>
+                    <li class="color yellow"></li>
+                    <li class="color green"></li>
+                    <li class="color blue"></li>
+                    <li class="color purple"></li>
+                    <li class="color black"></li>
+                    <li class="color white"></li>
+                  </ul>
+                </div>
+                <hr>
+
+                <div class="ordering-options">
+                  <p class="filter-title"><strong>Ordering Options</strong></p>
+                  <ul class="ordering-choices">
+                    <li class="choice favorites">
+                      <input type="checkbox">
+                      <span>In Your Favorites</span>
+                    </li>
+                    <li class="choice gift-cards">
+                      <input type="checkbox">
+                      <span>Accepts Etsy Gift Cards</span>
+                    </li>
+                    <li class="choice customizable">
+                      <input type="checkbox">
+                      <span>Customizable</span>
+                    </li>
+                </ul>
+                </div>
+                <hr>
+
+                <div class="shop-location">
+                  <p class="filter-title"><strong>Shop Location</strong></p>
+                  <ul class="location-choices">
+                    <li class="choice anywhere">
+                      <input class="item-type-btn" type="radio" name="anywhere" value="anywhere">
+                      <span>Anywhere</span>
+                    </li>
+                    <li class="choice united-states">
+                      <input class="item-type-btn" type="radio" name="US" value="United States">
+                      <span>United States</span>
+                    </li>
+                    <p class="choose-custom">Choose a custom location</p>
+                  </ul>
+                </div>
+                <hr>
+
+                <div class="ship-to">
+                  <p class="filter-title"><strong>Ship To</strong></p>
+                  <input class="select-ship"><type="text" placeholder="United States">
+                </div>
+              </form><!--END product filters-->
+            </div>
+
+          </div><!--END sidebar wrapper-->
+        </div><!--END sidebar container-->
+
+            <!--product listings-->
+            <ul class="product-listings">
+            </ul>
+
+            <!-- <section></section> -->
+
+      </div><!--END MAIN CONTAINER wrapper-->
+    </div><!--END MAIN CONTAINER-->
+
+
+
+    <!--FOOTER ELEMENT-->
+      <footer class="footer-element">
+
+        <!--FOOTER CONTENT-->
+        <div class="footer-content">
+
+          <!--subscribe-->
+          <section class="subscribe">
+            <p class="subscribe-text">Get top trends and fresh editors' picks in your inbox with Etsy Finds.</p>
+            <button class="subscribe-btn"><strong>Subscribe</strong></button>
+          </section><!--END subscribe-->
+
+          <!--FOOTER links-->
+          <section class="footer-links">
+            <ul class="links start-business">
+              <li>
+                <p>Turn Your Passion into a Business</p>
+                <button class="open-shop-btn">Open a Shop</button>
+              </li>
+              <li class="sell-etsy">
+                <p>Sell on Etsy</p>
+                <a href="#">Seller Handbook</a>
+                <a href="#">Etsy Credit Card Reader</a>
+              </li>
+            </ul>
+            <ul class="links join-community">
+              <li>
+                <p>Join the community</p>
+                <a href="#">Teams</a>
+                <a href="#">Forums</a>
+                <a href="#">Upcoming Events</a>
+                <a href="#">Affiliates</a>
+              </li>
+            </ul>
+            <ul class="links discover-shop">
+              <li>
+                <p>Discover and Shop</p>
+                <a href="#">Gift Cards</a>
+                <a href="#">Blog</a>
+                <a href="#">Tastemakers</a>
+                <a href="#">Mobile Apps</a>
+                <a href="#">Gift Registries</a>
+                <a href="#">Wholesale</a>
+                <a href="#">Search</a>
+                <a href="#">Etsy Finds</a>
+              </li>
+            </ul>
+            <ul class="links get-to-know">
+              <li>
+                <p>Get to Know Us</p>
+                <a href="#">About</a>
+                <a href="#">Careers</a>
+                <a href="#">Developers</a>
+                <a href="#">Investors</a>
+              </li>
+            </ul>
+            <ul class="links follow-etsy">
+              <li>
+                <p>Follow Etsy</p>
+              <li class="facebook">
+                <i class="fa fa-facebook-square"></i>
+                <a href="#">Facebook</a>
+              </li>
+              <li class="twitter">
+                <i class="fa fa-twitter"></i>
+                <a href="#">Twitter</a>
+              </li>
+              <li class="pinterest">
+                <i class="fa fa-pinterest-p"></i>
+                <a href="#">Pinterest</a>
+              </li>
+              <li class="instagram">
+                <i class="fa fa-instagram"></i>
+                <a href="#">Instagram</a>
+              </li>
+            </ul>
+          </section><!--end FOOTER links-->
+
+          <!--Horizontal rule-->
+          <hr class="section-break">
+
+          <!--Locale-info-->
+          <section class="locale-info">
+            <ul class="locale-links">
+              <li class="item country">
+                <i class="fa fa-globe"></i>
+                <a href="#">United States</a>
+              </li>
+              <li class="item language">
+                <a href="#">English (US)</a>
+              </li>
+              <li class="item currency">
+                <a href="#">$ USD</a>
+              </li>
+              <li class="help">
+                <button class="btn help"><strong>Help</strong></button>
+              </li>
+            </ul>
+          </section><!--ENDlocale-info-->
+
+          <!--Legal info-->
+          <section class="legal-info">
+            <ul class="legal-links">
+              <li class="copyright">&copy 2015 Etsy, Inc.</li>
+              <a href="#">Terms</a>
+              <a href="#">Privacy</a>
+              <a href="#">Copyright</a>
+              <a href="#">Internet-based Ads</a>
+            </ul>
+          </section><!--END legal-info-->
+        </div><!--END footer CONTENT-->
+      </footer><!--END footer-->
+
+
+
+      <script id="product-template" type="text/x-handlebars-template">
+
+        <!--PRODUCT-->
+          <li class="product">
+        		<img src="{{Images.0.url_170x135}}" height="175">
+            <div class="product-info">
+        			<p class="prod-title">{{title}}</p>
+        			<ul class="other-prod">
+                <li><p class="detail shop-name">{{Shop.shop_name}}</p></li>
+          			<li><p class="detail price">${{price}} {{currency_code}}</p></li>
+        			</ul>
+            </div>
+          </li><!--END product-->
+
+      </script>
+
+    <script src="bower_components/handlebars/handlebars.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
